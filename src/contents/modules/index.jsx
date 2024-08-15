@@ -1,11 +1,24 @@
-import { Box, Button, Container, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  Stack,
+  Typography,
+} from "@mui/material";
 import { modulesData } from "../../utils/consts";
 import React, { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
+import CustomButton from "../../components/button";
 
 function Modules() {
   const [count, setCount] = useState(4);
+
+  const [selected, setSelected] = useState(null);
 
   const Show = () => {
     setCount((quantity) => quantity + 4);
@@ -84,6 +97,9 @@ function Modules() {
                 {el?.description}
               </Typography>
               <Button
+                onClick={() => {
+                  setSelected(el);
+                }}
                 sx={{
                   p: 0,
                   color: "inherit",
@@ -96,24 +112,22 @@ function Modules() {
                     transition: "1s all",
                   },
                   "& .end": {
-                    marginLeft: 1
+                    marginLeft: 1,
                   },
-                  "span" : {
+                  span: {
                     lineHeight: 1,
-                    pt: "5px"
+                    pt: "5px",
                   },
                   ":hover": {
                     ".start": {
                       opacity: "1",
                       maxWidth: "40px",
-                      marginRight: 1
+                      marginRight: 1,
                     },
                   },
                 }}
               >
-                <Stack
-                  sx={{ flexDirection: "row", alignItems: "center" }}
-                >
+                <Stack sx={{ flexDirection: "row", alignItems: "center" }}>
                   <IoIosArrowBack className="start" />
                   <span>Read More</span>
                   <IoIosArrowForward className="end" />
@@ -134,6 +148,45 @@ function Modules() {
           <Button onClick={Close}>Close</Button>
         </Box>
       )}
+      <Dialog
+        open={!!selected}
+        onClose={() => setSelected(null)}
+        maxWidth={"sm"}
+      >
+        <DialogContent sx={{ width: "100%" }}>
+          <Box
+            sx={{
+              width: "100%",
+              minWidth: { xs: "300px", sm: "450px", md: "550px" },
+            }}
+          >
+            <Box
+              component={"img"}
+              src={selected?.img || ""}
+              sx={{
+                width: "100%",
+                height: { xs: "240px", md: "340px" },
+                objectFit: "contain",
+              }}
+            />
+            <Typography sx={{ fontSize: "24px", fontWeight: "600" }}>
+              {selected?.title}
+            </Typography>
+            <Typography sx={{ fontSize: "16px" }}>
+              {selected?.description}
+            </Typography>
+          </Box>
+        </DialogContent>
+        <DialogActions>
+          <CustomButton
+            onClick={() => {
+              setSelected(null);
+            }}
+          >
+            Close
+          </CustomButton>
+        </DialogActions>
+      </Dialog>
     </Container>
   );
 }
