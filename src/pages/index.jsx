@@ -39,6 +39,7 @@ export default function Home() {
         sx={{
           background: "linear-gradient(to right, #3530d4, #66278d 100%)",
           padding: "100px 0px 100px 0px",
+          mt: "-100px"
         }}
       >
         <Modules />

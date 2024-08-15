@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import StyledTypography from "../../components/text/body1";
 import React from "react";
 import BodyTypography from "../../components/text/body0";
@@ -32,32 +32,34 @@ function Technology() {
         <Box component="img" src="public/img/decor-1.png" alt="Decorative" />
       </Box>
 
-      <Box sx={{ position: "relative", textAlign: "center",marginTop:"5%" }}>
+      <Stack sx={{ position: "relative", textAlign: "center",marginTop:"5%", gap: 4, alignItems: "center" }}>
         <Box
           component="img"
           src="public/img/tab-1.png"
-          sx={{ boxShadow: 5, borderRadius: "20px" }}
+          sx={{ boxShadow: 5, borderRadius: "20px", width: {xs: "100%", md: "70%"} }}
         />
-
         <Box
           component="img"
           src="public/img/phone-1.png"
           sx={{
-            position: "absolute",
+            position: {xs: "static", md: "absolute"},
             top: "20%",
             left: 0,
             objectFit: "contain",
+            width: {xs: "80%", md: "unset"},
             boxShadow: 3,
             borderRadius: "30px",
           }}
         />
 
+
         <Box
           component="img"
           src="public/img/screen-1.png"
           sx={{
-            position: "absolute",
+            position: {xs: "static", md: "absolute"},
             top: "54%",
+            width: {xs: "80%", md: "unset"},
             right: 0,
             objectFit: "contain",
             background: "#fff",
@@ -65,7 +67,7 @@ function Technology() {
             borderRadius: "50%",
           }}
         />
-      </Box>
+      </Stack>
     </Container>
   );
 }
