@@ -145,7 +145,7 @@ function Modules() {
                 >
                   <Stack sx={{ flexDirection: "row", alignItems: "center" }}>
                     <IoIosArrowBack className="start" />
-                    <span>Read More</span>
+                    <span><Translation text={"Show"}/></span>
                     <IoIosArrowForward className="end" />
                   </Stack>
                 </Button>
@@ -156,12 +156,12 @@ function Modules() {
         </Box>
         {count < modulesData.length && (
           <Box sx={{ textAlign: "center", marginTop: "3%" }}>
-            <CustomButton onClick={Show}>Show More</CustomButton>
+            <CustomButton onClick={Show}><Translation text={"Show"} /></CustomButton>
           </Box>
         )}
         {count > 17 && (
           <Box sx={{ textAlign: "center", marginTop: "3%" }}>
-            <CustomButton onClick={Close}>Close</CustomButton>
+            <CustomButton onClick={Close}><Translation text={"close"} /></CustomButton>
           </Box>
         )}
         <Dialog
@@ -199,7 +199,7 @@ function Modules() {
                 setSelected(null);
               }}
             >
-              Close
+              <Translation text={"close"} />
             </CustomButton>
           </DialogActions>
         </Dialog>

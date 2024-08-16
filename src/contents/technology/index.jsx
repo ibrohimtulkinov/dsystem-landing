@@ -2,6 +2,7 @@ import { Box, Container, Stack, Typography } from "@mui/material";
 import StyledTypography from "../../components/text/body1";
 import React from "react";
 import BodyTypography from "../../components/text/body0";
+import Translation from "../../components/translation";
 
 function Technology() {
   return (
@@ -15,7 +16,7 @@ function Technology() {
         <Box>
           <BodyTypography
           >
-            Modules
+            <Translation text={"modules"}/>
           </BodyTypography>
         </Box>
         <Box
@@ -26,7 +27,7 @@ function Technology() {
           }}
         >
           <StyledTypography sx={{ fontSize: "36px", width: "60%",paddingY:"1%"}}>
-            Inspiring possibility for a brand's digital experience
+            <Translation text={"Inspiring possibility for a brand`s digital experience"} />
           </StyledTypography>
         </Box>
         <Box component="img" src="public/img/decor-1.png" alt="Decorative" />

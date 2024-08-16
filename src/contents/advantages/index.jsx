@@ -7,6 +7,7 @@ import { PiGlobeHemisphereWestThin } from "react-icons/pi";
 import { LuBadgeCheck } from "react-icons/lu";
 import { MdOutlineShowChart } from "react-icons/md";
 import CountUp from "react-countup";
+import Translation from "../../components/translation";
 
 function Advantages() {
   return (
@@ -14,7 +15,7 @@ function Advantages() {
       <Container>
         <Box
           sx={{
-            paddingTop: { xs: "12%", md: "15%" }, 
+            paddingTop: { xs: "12%", md: "15%" },
             gap: 7,
             display: "grid",
             marginBottom: "8%",
@@ -27,10 +28,12 @@ function Advantages() {
         >
           <Box sx={{ width: "74%" }}>
             <Box>
-              <BodyTypography>Why choose us</BodyTypography>
+              <BodyTypography>
+                <Translation text={"Why choose us"} />
+              </BodyTypography>
             </Box>
             <StyledTypography sx={{ paddingY: "5%" }}>
-              Reason for choosing
+              <Translation text={"Reason for choosing"} />
             </StyledTypography>
             <Box
               component="img"
@@ -40,7 +43,7 @@ function Advantages() {
             <StyledTypography
               sx={{ fontSize: "22px", paddingBottom: "5%", paddingTop: "10%" }}
             >
-              Value for Results
+              <Translation text={"Value for Results"} />
             </StyledTypography>
             <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
               <Box
@@ -60,15 +63,18 @@ function Advantages() {
 
               <Box>
                 <Typography>
-                  Except to obtain some advantage from who has any right to
-                  find.
+                  <Translation
+                    text={
+                      "Except to obtain some advantage from who has any right to find."
+                    }
+                  />
                 </Typography>
               </Box>
             </Box>
           </Box>
           <Box sx={{ width: "74%" }}>
             <StyledTypography sx={{ fontSize: "22px" }}>
-              Global Experience{" "}
+              <Translation text={"Global Experience"} />{" "}
             </StyledTypography>
             <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
               <Box
@@ -87,14 +93,25 @@ function Advantages() {
               </Box>
               <Box sx={{ paddingY: "10%" }}>
                 <Typography>
-                  Nor again is there anyone who loves or pursues or desires
+                  <Translation
+                    text={
+                      "Nor again is there anyone who loves or pursues or desires"
+                    }
+                  />
                 </Typography>
               </Box>
             </Box>
-            <StyledTypography sx={{ fontSize: "22px", paddingTop: "10px" }}>
-              High-Quality Results
+            <StyledTypography sx={{ fontSize: "22px", paddingTop: "13px" }}>
+              <Translation text={"High-Quality Results"} />
             </StyledTypography>
-            <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: "20px",
+                paddingTop: "25px",
+              }}
+            >
               <Box
                 sx={{
                   borderRadius: "50%",
@@ -109,9 +126,13 @@ function Advantages() {
               >
                 <LuBadgeCheck />
               </Box>
-              <Box sx={{ paddingTop: "10%" }}>
+              <Box sx={{ display: "flex", alignItems: "center" }}>
                 <Typography>
-                  This mistakens idea denouncings and was born complete system
+                  <Translation
+                    text={
+                      "This mistakens idea denouncings and was born complete system."
+                    }
+                  />
                 </Typography>
               </Box>
             </Box>
@@ -131,12 +152,19 @@ function Advantages() {
                 sm: "repeat(2, 1fr)",
                 md: "repeat(4, 1fr)",
               },
+              gap: 2, 
+              justifyContent: {
+                xs: "center", 
+                sm: "start", 
+                md: "start", 
+              },
+              alignItems: "center", 
             }}
           >
             <Box
               sx={{
                 display: "flex",
-                width: "50%",
+                justifyContent: "center", 
                 alignItems: "center",
                 gap: 2,
               }}
@@ -144,12 +172,14 @@ function Advantages() {
               <Box sx={{ fontSize: "60px" }}>
                 <CountUp end={3} duration={4} />K
               </Box>
-              <Box sx={{ fontSize: "20px" }}>Projects Completed</Box>
+              <Box sx={{ fontSize: "20px" }}>
+                <Translation text={"Projects Completed"} />
+              </Box>
             </Box>
             <Box
               sx={{
                 display: "flex",
-                width: "50%",
+                justifyContent: "center", 
                 alignItems: "center",
                 gap: 2,
               }}
@@ -157,12 +187,14 @@ function Advantages() {
               <Box sx={{ fontSize: "60px" }}>
                 <CountUp end={2} duration={4} />K
               </Box>
-              <Box sx={{ fontSize: "20px" }}>Industrires Served</Box>
+              <Box sx={{ fontSize: "20px" }}>
+                <Translation text={"Industries Served"} />
+              </Box>
             </Box>
             <Box
               sx={{
                 display: "flex",
-                width: "50%",
+                justifyContent: "center", 
                 alignItems: "center",
                 gap: 2,
               }}
@@ -170,12 +202,14 @@ function Advantages() {
               <Box sx={{ fontSize: "60px" }}>
                 <CountUp end={139} duration={2} />
               </Box>
-              <Box sx={{ fontSize: "20px" }}>Expert Team Mates</Box>
+              <Box sx={{ fontSize: "20px" }}>
+                <Translation text={"Expert Team Mates"} />
+              </Box>
             </Box>
             <Box
               sx={{
                 display: "flex",
-                width: "50%",
+                justifyContent: "center", 
                 alignItems: "center",
                 gap: 2,
               }}
@@ -183,7 +217,9 @@ function Advantages() {
               <Box sx={{ fontSize: "60px" }}>
                 <CountUp end={14} duration={4} />m
               </Box>
-              <Box sx={{ fontSize: "20px" }}>Happy Customers</Box>
+              <Box sx={{ fontSize: "20px" }}>
+                <Translation text={"Happy Customers"} />
+              </Box>
             </Box>
           </Box>
         </Box>

@@ -5,6 +5,7 @@ import React from "react";
 import { FaTextHeight } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { MdOutlinePerson } from "react-icons/md";
+import Translation from "../../components/translation";
 import CustomButton from "../../components/button";
 
 function Contact() {
@@ -50,11 +51,11 @@ function Contact() {
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <MdOutlinePerson />
               </Box>
-              <Typography>Your Name</Typography>
+              <Typography><Translation text={"name"} /></Typography>
             </Box>
             <TextField
               id="outlined-basic"
-              label="Enter name here"
+              label={<Translation text={"name"} />}
               variant="outlined"
               fullWidth
               sx={{
@@ -92,11 +93,11 @@ function Contact() {
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <MdOutlineMailOutline />
               </Box>
-              <Typography>Email Address</Typography>
+              <Typography><Translation text={"Email Address"} /></Typography>
             </Box>
             <TextField
               id="outlined-basic"
-              label="Email Address"
+              label={<Translation text={"Email Address"} />}
               variant="outlined"
               fullWidth
               sx={{
@@ -134,11 +135,11 @@ function Contact() {
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <MdOutlinePerson />
               </Box>
-              <Typography>Subject</Typography>
+              <Typography><Translation text={"Subject"} /></Typography>
             </Box>
             <TextField
               id="outlined-basic"
-              label="Subject"
+              label={<Translation text={"Subject"} />}
               variant="outlined"
               fullWidth
               sx={{
@@ -176,11 +177,11 @@ function Contact() {
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <FaTextHeight />
               </Box>
-              <Typography>Message</Typography>
+              <Typography><Translation text={"Message"} /></Typography>
             </Box>
             <TextField
               id="outlined-multiline"
-              label="Message goes here"
+              label={<Translation text={"Message goes here"} />}
               variant="outlined"
               multiline
               rows={4}
@@ -211,7 +212,7 @@ function Contact() {
               }}
             />
             <CustomButton sx={{ marginTop: "20px" }} fullWidth>
-              Send Message
+              <Translation text={"Send"} />
             </CustomButton>
           </Box>
           <Box

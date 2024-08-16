@@ -7,6 +7,7 @@ import StyledTypography from "../../components/text/body1";
 import BodyTypography from "../../components/text/body0";
 import CustomButton from "../../components/button";
 import { display } from "@mui/system";
+import Translation from "../../components/translation";
 
 const contentData = [
   {
@@ -56,24 +57,42 @@ function Benefits() {
               },
             }}
           >
-            <Box sx={{ position: "relative" }}>
+            <Box
+              sx={{
+                position: "relative",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                "@media (max-width: 800px)": {
+                  flexDirection: "column",
+                  alignItems: "center",
+                },
+              }}
+            >
               <Box
                 component="img"
                 src="public/img/tab-2.png"
-                sx={{ boxShadow: 5, borderRadius: "20px" }}
+                sx={{
+                  boxShadow: 5,
+                  borderRadius: "20px",
+                  marginBottom: "20px",
+                }}
               />
 
               <Box
                 component="img"
                 src="public/img/screen-3.png"
                 sx={{
-                  position: "absolute",
-                  top: "50%",
-                  right: "73%",
-                  objectFit: "contain",
                   boxShadow: 3,
                   borderRadius: "3px",
                   zIndex: 10,
+                  marginBottom: "20px",
+                  "@media (min-width: 800px)": {
+                    position: "absolute",
+                    top: "50%",
+                    right: "73%",
+                    objectFit: "contain",
+                  },
                 }}
               />
 
@@ -95,19 +114,27 @@ function Benefits() {
                 component="img"
                 src="public/img/screen-2.png"
                 sx={{
-                  position: "absolute",
-                  top: "-7%",
-                  right: "4%",
-                  objectFit: "contain",
-                  background: "#fff",
                   boxShadow: 3,
+                  zIndex: 10,
+                  background: "#fff",
+                  "@media (min-width: 800px)": {
+                    position: "absolute",
+                    top: "-7%",
+                    right: "4%",
+                    objectFit: "contain",
+                  },
                 }}
               />
             </Box>
+
             <Box>
-              <BodyTypography>We are 4DX</BodyTypography>
+              <BodyTypography>
+                <Translation text={"We are 4DX"} />
+              </BodyTypography>
               <StyledTypography sx={{ fontSize: "36px", paddingY: "2%" }}>
-                Powerful analytics that goes beyond your organization
+                <Translation
+                  text={"Powerful analytics that goes beyond your organization"}
+                />
               </StyledTypography>
               <Box
                 component="img"
@@ -115,8 +142,11 @@ function Benefits() {
                 alt="Decorative"
               />
               <Typography sx={{ paddingY: "4%" }}>
-                Increase organizational efficiency of an organization by
-                managing and improving how company resources are utilized.
+                <Translation
+                  text={
+                    "Increase organizational efficiency of an organization by managing and improving how company resources are utilized"
+                  }
+                />
               </Typography>
 
               {contentData?.map((content) => (
@@ -138,7 +168,9 @@ function Benefits() {
                     {content?.icon}
                   </Box>
                   <Box>
-                    <Typography>{content?.text}</Typography>
+                    <Typography>
+                      <Translation text={content?.text} />
+                    </Typography>
                   </Box>
                 </Box>
               ))}
@@ -157,7 +189,7 @@ function Benefits() {
                   <FaAngleRight />
                 </Box>
                 <Typography sx={{ fontWeight: "bold" }}>
-                  What You Need?
+                  <Translation text={"What You Need?"} />
                 </Typography>
                 <Box
                   component="a"
@@ -174,7 +206,7 @@ function Benefits() {
                     },
                   }}
                 >
-                  Meet Our Experts.
+                  <Translation text={"Meet Our Experts"} />
                 </Box>
               </Box>
             </Box>

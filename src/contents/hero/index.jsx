@@ -37,6 +37,9 @@ function Hero() {
               "@media (max-width: 900px)": {
                 fontSize: "90px", 
               },
+              "@media (max-width: 450px)": {
+                fontSize: "60px", 
+              },
             }}
           >
             D-System

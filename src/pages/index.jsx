@@ -23,7 +23,7 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
           minHeight: "100vh",
           "@media (max-width: 900px)": {
-            backgroundImage: "none", 
+            backgroundImage: "none",
           },
         }}
       >
@@ -35,7 +35,7 @@ export default function Home() {
             backgroundRepeat: "no-repeat",
             minHeight: "100vh",
             "@media (max-width: 900px)": {
-              backgroundImage: "none", 
+              backgroundImage: "none",
             },
           }}
         >
@@ -62,7 +62,10 @@ export default function Home() {
           backgroundSize: "contain",
           backgroundPosition: "left",
           backgroundRepeat: "no-repeat",
-          minHeight: { xs: "auto", md: "120vh" }, 
+          minHeight: "120vh",
+          "@media (max-width: 900px)": {
+            minHeight: "auto",
+          },
         }}
       >
         <Facts />
@@ -74,7 +77,7 @@ export default function Home() {
           backgroundSize: "auto 100%",
           backgroundPosition: "center bottom",
           backgroundRepeat: "no-repeat",
-          minHeight: { xs: "auto", md: "130vh" }, 
+          minHeight: "140vh", 
           "@media (max-width: 900px)": {
             minHeight: "auto", 
           },

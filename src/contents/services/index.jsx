@@ -35,105 +35,112 @@ const cardData = [
 function Services() {
   return (
     <section id={"point"}>
-
-    <Container  auto>
-      <Box
-        sx={{
-          display: "grid",
-          gridTemplateColumns: {
-            xs: "1fr",
-            sm: "repeat(2, 1fr)",
-            md: "repeat(3, 1fr)",
-          },
-          marginTop: "20%",
-          gap: 4,
-        }}
-        >
-        {cardData.map((card, index) => (
-          <Card
-          key={index}
+      <Container auto>
+        <Box
           sx={{
-            maxWidth: 345,
-            textAlign: "center",
-            borderRadius: "5px",
-            padding: "48px 30px 40px 30px",
-            boxShadow: "0 10px 30px 5px rgba(0, 0, 0, 0.1)",
-            transition: "box-shadow 0.3s ease-in-out",
-            "&:hover": {
-              boxShadow: "0px 0px  20px 0px rgba(0, 0, 2, 0.3)",
-              "& img": {
-                transform: "scale(1.05)",
-              },
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)", 
+            justifyContent: "center", 
+            marginTop: "20%",
+            gap: 4,
+            "@media (max-width: 900px)": {
+              gridTemplateColumns: "repeat(2, 1fr)", 
             },
-            ...(index === 1 && {
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              padding: "24px 30px 24px 30px",
-              "& .MuiCardMedia-root": {
-                marginBottom: "16px",
-              },
-            }),
+            "@media (max-width: 600px)": {
+              gridTemplateColumns: "1fr", 
+              justifyItems: "center", 
+            },
           }}
-          >
-            {index === 1 ? (
-              <>
-                <CardMedia
-                  component="img"
-                  alt={card.title}
-                  height="180"
-                  image={card.image}
-                  sx={{
-                    objectFit: "contain",
-                    transition: "transform 0.3s ease-in-out",
-                    paddingTop: "7%",
-                  }}
-                  />
-                <CardTypography sx={{paddingTop:"15px"}}><Translation text={card.title}/></CardTypography>
-                <CardContent>
-                  <Typography
+        >
+          {cardData.map((card, index) => (
+            <Card
+              key={index}
+              sx={{
+                maxWidth: 345,
+                textAlign: "center",
+                borderRadius: "5px",
+                padding: "48px 30px 40px 30px",
+                boxShadow: "0 10px 30px 5px rgba(0, 0, 0, 0.1)",
+                transition: "box-shadow 0.3s ease-in-out",
+                "&:hover": {
+                  boxShadow: "0px 0px  20px 0px rgba(0, 0, 2, 0.3)",
+                  "& img": {
+                    transform: "scale(1.05)",
+                  },
+                },
+                ...(index === 1 && {
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  padding: "24px 30px 24px 30px",
+                  "& .MuiCardMedia-root": {
+                    marginBottom: "16px",
+                  },
+                }),
+              }}
+            >
+              {index === 1 ? (
+                <>
+                  <CardMedia
+                    component="img"
+                    alt={card.title}
+                    height="180"
+                    image={card.image}
                     sx={{
-                      color: "#666666",
-                      fontSize: "16px",
-                      fontWeight: 500,
+                      objectFit: "contain",
+                      transition: "transform 0.3s ease-in-out",
+                      paddingTop: "7%",
                     }}
-                    >
-                    <Translation text={card.description}/>
-                  </Typography>
-                </CardContent>
-              </>
-            ) : (
-              <>
-                <CardTypography><Translation text={card.title}/></CardTypography>
-                <CardMedia
-                  component="img"
-                  alt={card.title}
-                  height="180"
-                  image={card.image}
-                  sx={{
-                    objectFit: "contain",
-                    transition: "transform 0.3s ease-in-out",
-                  }}
                   />
-                <CardContent>
-                  <Typography
-                    sx={{
-                      color: "#666666",
-                      fontSize: "16px",
-                      fontWeight: 500,
-                    }}
+                  <CardTypography sx={{ paddingTop: "15px" }}>
+                    <Translation text={card.title} />
+                  </CardTypography>
+                  <CardContent>
+                    <Typography
+                      sx={{
+                        color: "#666666",
+                        fontSize: "16px",
+                        fontWeight: 500,
+                      }}
                     >
-                     <Translation text={card.description}/>
-                  </Typography>
-                </CardContent>
-              </>
-            )}
-            {/* <ReadMoreButton /> */}
-          </Card>
-        ))}
-      </Box>
-    </Container>
-        </section>
+                      <Translation text={card.description} />
+                    </Typography>
+                  </CardContent>
+                </>
+              ) : (
+                <>
+                  <CardTypography>
+                    <Translation text={card.title} />
+                  </CardTypography>
+                  <CardMedia
+                    component="img"
+                    alt={card.title}
+                    height="180"
+                    image={card.image}
+                    sx={{
+                      objectFit: "contain",
+                      transition: "transform 0.3s ease-in-out",
+                    }}
+                  />
+                  <CardContent>
+                    <Typography
+                      sx={{
+                        color: "#666666",
+                        fontSize: "16px",
+                        fontWeight: 500,
+                      }}
+                    >
+                      <Translation text={card.description} />
+                    </Typography>
+                  </CardContent>
+                </>
+              )}
+              {/* <ReadMoreButton /> */}
+            </Card>
+          ))}
+        </Box>
+      </Container>
+    </section>
   );
 }
 

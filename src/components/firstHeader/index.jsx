@@ -145,7 +145,8 @@ function FirstHeader() {
           </Box>
           <Typography
             component="a"
-            href="#"
+            href="http://test.dsystem.uz/"
+            target="_blank"
             sx={{
               textDecoration: "none",
               fontFamily: "Josefin Sans",

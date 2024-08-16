@@ -8,6 +8,7 @@ import { LuMessagesSquare } from "react-icons/lu";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { PiMagnifyingGlassPlusBold } from "react-icons/pi";
 import { FaCloudversify } from "react-icons/fa";
+import Translation from "../../components/translation";
 
 function Facts() {
   return (
@@ -26,9 +27,9 @@ function Facts() {
           }}
         >
           <Box>
-            <BodyTypography>Skills & Facts</BodyTypography>
+            <BodyTypography><Translation text={"Skills & Facts"}/></BodyTypography>
             <StyledTypography sx={{ fontSize: "36px", paddingY: "2%" }}>
-              We keep our self updated with latest trends
+              <Translation text={"We keep our self updated with latest trends"} />
             </StyledTypography>
             <Box
               component="img"
@@ -36,10 +37,9 @@ function Facts() {
               alt="Decorative"
             />
             <Typography sx={{ paddingY: "4%" }}>
-              As a solution providing company we offer a range consulting,
-              development quality testing services with 100% satisfaction.
+             <Translation text={"As a solution providing company we offer a range consulting,development quality testing services with 100% satisfaction."} />
             </Typography>
-            <Typography>Data Consulting</Typography>
+            <Typography><Translation text={"Data Consulting"} /></Typography>
             <Box
               sx={{
                 display: "flex",
@@ -57,7 +57,7 @@ function Facts() {
                 />
               </Box>
             </Box>
-            <Typography sx={{ paddingTop: "5%" }}>Big Data & BI</Typography>
+            <Typography sx={{ paddingTop: "5%" }}><Translation text={"Big Data & BI"} /></Typography>
             <Box
               sx={{
                 display: "flex",
@@ -76,7 +76,7 @@ function Facts() {
               </Box>
             </Box>
             <Typography sx={{ paddingTop: "5%" }}>
-              Predictive Analysis
+              <Translation text={"Predictive Analysis"} />
             </Typography>
             <Box
               sx={{
