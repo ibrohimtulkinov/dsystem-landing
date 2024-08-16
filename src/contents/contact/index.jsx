@@ -232,7 +232,7 @@ function Contact() {
           >
             <Box
               component="img"
-              src="/public/img/illastration-6.png"
+              src="/img/illastration-6.png"
               sx={{
                 maxWidth: "150%",
                 width: "100%", 

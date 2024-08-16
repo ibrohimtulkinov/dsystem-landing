@@ -115,7 +115,7 @@ function FirstHeader() {
             </Box>
             <Typography
               component="a"
-              href="public/D-system_en.pdf"
+              href="/D-system_en.pdf"
               download="Commercial offer.pdf"
               sx={{
                 cursor: "pointer",

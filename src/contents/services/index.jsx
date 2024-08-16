@@ -14,19 +14,19 @@ import Translation from "../../components/translation";
 const cardData = [
   {
     title: "Individual Analyst",
-    image: "/public/img/service-1.png",
+    image: "/img/service-1.png",
     description:
       "Simple easy distinguish in a free hour when our power choice.",
   },
   {
     title: "Teams & Organizations",
-    image: "/public/img/service-2.png",
+    image: "/img/service-2.png",
     description:
       "Therefore always hold these matters to principle reject pleasures.",
   },
   {
     title: "Embedded Analytics",
-    image: "/public/img/service-3.png",
+    image: "/img/service-3.png",
     description:
       "Trouble that bound ensue equaly blame belongs to those weakness.",
   },

@@ -37,7 +37,7 @@ function Advantages() {
             </StyledTypography>
             <Box
               component="img"
-              src="public/img/decor-1.png"
+              src="/img/decor-1.png"
               alt="Decorative"
             />
             <StyledTypography

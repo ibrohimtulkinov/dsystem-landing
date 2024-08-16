@@ -93,7 +93,7 @@ const Header = () => {
         <Box sx={{ width: { xs: "120px", sm: "150px" }, flex: "none" }}>
           <Box
             component="img"
-            src="public/dsystem.png"
+            src="/dsystem.png"
             alt="Logo"
             sx={{
               width: "100%",

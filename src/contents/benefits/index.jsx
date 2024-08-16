@@ -71,7 +71,7 @@ function Benefits() {
             >
               <Box
                 component="img"
-                src="public/img/tab-2.png"
+                src="/img/tab-2.png"
                 sx={{
                   boxShadow: 5,
                   borderRadius: "20px",
@@ -81,7 +81,7 @@ function Benefits() {
 
               <Box
                 component="img"
-                src="public/img/screen-3.png"
+                src="/img/screen-3.png"
                 sx={{
                   boxShadow: 3,
                   borderRadius: "3px",
@@ -112,7 +112,7 @@ function Benefits() {
 
               <Box
                 component="img"
-                src="public/img/screen-2.png"
+                src="/img/screen-2.png"
                 sx={{
                   boxShadow: 3,
                   zIndex: 10,
@@ -138,7 +138,7 @@ function Benefits() {
               </StyledTypography>
               <Box
                 component="img"
-                src="public/img/decor-1.png"
+                src="/img/decor-1.png"
                 alt="Decorative"
               />
               <Typography sx={{ paddingY: "4%" }}>

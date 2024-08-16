@@ -30,18 +30,18 @@ function Technology() {
             <Translation text={"Inspiring possibility for a brand`s digital experience"} />
           </StyledTypography>
         </Box>
-        <Box component="img" src="public/img/decor-1.png" alt="Decorative" />
+        <Box component="img" src="/img/decor-1.png" alt="Decorative" />
       </Box>
 
       <Stack sx={{ position: "relative", textAlign: "center",marginTop:"5%", gap: 4, alignItems: "center" }}>
         <Box
           component="img"
-          src="public/img/tab-1.png"
+          src="/img/tab-1.png"
           sx={{ boxShadow: 5, borderRadius: "20px", width: {xs: "100%", md: "70%"} }}
         />
         <Box
           component="img"
-          src="public/img/phone-1.png"
+          src="/img/phone-1.png"
           sx={{
             position: {xs: "static", md: "absolute"},
             top: "20%",
@@ -56,7 +56,7 @@ function Technology() {
 
         <Box
           component="img"
-          src="public/img/screen-1.png"
+          src="/img/screen-1.png"
           sx={{
             position: {xs: "static", md: "absolute"},
             top: "54%",

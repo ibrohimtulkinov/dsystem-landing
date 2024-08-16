@@ -33,7 +33,7 @@ function Facts() {
             </StyledTypography>
             <Box
               component="img"
-              src="public/img/decor-1.png"
+              src="/img/decor-1.png"
               alt="Decorative"
             />
             <Typography sx={{ paddingY: "4%" }}>
@@ -118,7 +118,7 @@ function Facts() {
             >
               <Box
                 component="img"
-                src="public/img/screen-4.png"
+                src="/img/screen-4.png"
                 sx={{
                   position: "absolute",
                   top: "40%",
