@@ -3,11 +3,14 @@ import Hero from "../contents/hero";
 import Services from "../contents/services";
 import Img from "../../public/img/banner-4.1.png";
 import Shape from "../../public/img/shape.png";
+import Shape3 from "../../public/img/shape-27.png";
 import Technology from "../contents/technology";
 import Modules from "../contents/modules";
 import Benefits from "../contents/benefits";
 import Advantages from "../contents/advantages";
 import Facts from "../contents/facts";
+import Contact from "../contents/contact";
+import Shape5 from "../../public/img/shape-31.png";
 
 export default function Home() {
   return (
@@ -19,6 +22,9 @@ export default function Home() {
           backgroundPosition: "top right",
           backgroundRepeat: "no-repeat",
           minHeight: "100vh",
+          "@media (max-width: 900px)": {
+            backgroundImage: "none", 
+          },
         }}
       >
         <Box
@@ -28,122 +34,54 @@ export default function Home() {
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             minHeight: "100vh",
+            "@media (max-width: 900px)": {
+              backgroundImage: "none", 
+            },
           }}
         >
           <Hero />
           <Services />
         </Box>
       </Box>
+
       <Technology />
       <Box
         sx={{
           background: "linear-gradient(to right, #3530d4, #66278d 100%)",
           padding: "100px 0px 100px 0px",
-          mt: "-100px"
+          mt: "-100px",
         }}
       >
         <Modules />
       </Box>
       <Benefits />
       <Advantages />
-      <Facts />
+      <Box
+        sx={{
+          backgroundImage: `url(${Shape3})`,
+          backgroundSize: "contain",
+          backgroundPosition: "left",
+          backgroundRepeat: "no-repeat",
+          minHeight: { xs: "auto", md: "120vh" }, 
+        }}
+      >
+        <Facts />
+      </Box>
+
+      <Box
+        sx={{
+          backgroundImage: `url(${Shape5})`,
+          backgroundSize: "auto 100%",
+          backgroundPosition: "center bottom",
+          backgroundRepeat: "no-repeat",
+          minHeight: { xs: "auto", md: "130vh" }, 
+          "@media (max-width: 900px)": {
+            minHeight: "auto", 
+          },
+        }}
+      >
+        <Contact />
+      </Box>
     </Box>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* <Container sx={{position:"relative"}}>
-<Box
-  sx={{
-    display: "grid",
-    gridTemplateColumns: {
-      xs: "1fr",
-      sm: "repeat(1, 1fr)",
-      md: "repeat(2, 1fr)",
-    },
-    marginTop: "15%",
-    gap: 4,
-  }}
->
-  {modulesData?.slice(0, count).map((el,index) => (
-    <Box
-    key={index}
-      sx={{
-        display: "grid",
-        position:"absolute",
-        padding: "20px",
-        boxShadow: 4,
-        gridTemplateColumns: {
-          xs: "1fr",
-          sm: "1fr",
-          md: "repeat(2, 1fr)",
-        },
-        "@media (min-width:530px)": {
-          gridTemplateColumns: "repeat(2, 1fr)",
-        },
-      }}
-    >
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "flex-start",
-          width: "90%",
-          paddingLeft: 2,
-        }}
-      >
-        <Typography>{el?.title}</Typography>
-        <Typography>{el?.description}</Typography>
-        <Button>Read More</Button>
-      </Box>
-      <Box
-        component="img"
-        src="/public/img/module-1.png"
-        sx={{ alignItems: "flex-end", textAlign: "end" }}
-      />
-    </Box>
-  ))}
-</Box>
- {count < modulesData.length && (
-   <Box sx={{textAlign:"center", marginTop:"3%"}}>
-    <Button onClick={Show}>
-      Show More
-    </Button>
-   </Box>
- )}
-  {count > 17 && (
-   <Box sx={{textAlign:"center", marginTop:"3%"}}>
-    <Button onClick={Close}>
-      Close
-    </Button>
-   </Box>
-  )}
-
-</Container>
-
-help me for creating position I need Container relative and cards absolute fix it */}

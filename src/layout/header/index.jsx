@@ -7,7 +7,6 @@ import { Box, MenuItem, Select, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import FirstHeader from "../../components/firstHeader";
 
-
 const Header = () => {
   const [path, setPath] = useState("/#home");
   const [isSticky, setIsSticky] = useState(false);
@@ -77,6 +76,9 @@ const Header = () => {
         backgroundColor: isSticky ? "white" : "transparent",
         paddingY: "15px",
         transition: "background-color 0.4s ease",
+        "@media (max-width: 900px)": {
+          position: "static", 
+        },
       }}
     >
       {!isSticky && <FirstHeader />}
@@ -228,8 +230,6 @@ const Header = () => {
 };
 
 export default Header;
-
-
 
 {
   /* <Box sx={{ flex: "none" }}>

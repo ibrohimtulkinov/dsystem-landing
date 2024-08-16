@@ -6,25 +6,40 @@ import StyledTypography from "../../components/text/body1";
 
 function Hero() {
   return (
-    <Container auto>
+    <Container id={"home"} auto>
       <Box
         sx={{
           paddingTop: "25%",
           width: "50%",
+          "@media (max-width: 900px)": {
+            width: "100%",
+            paddingTop: "15%", 
+          },
         }}
       >
         <Box>
-          <StyledTypography>Turn Clicks Into</StyledTypography>
+          <StyledTypography
+            sx={{
+              "@media (max-width: 900px)": {
+                fontSize: "24px", 
+              },
+            }}
+          >
+           <Translation text={"Streamline Your Success with"}/>
+          </StyledTypography>
         </Box>
         <Box>
           <Typography
             sx={{
               fontWeight: "bold",
-              fontSize: "130px",
-              color: "#1d155c",
+              fontSize: "100px",
+              color: "#786df0",
+              "@media (max-width: 900px)": {
+                fontSize: "90px", 
+              },
             }}
           >
-            Customer
+            D-System
           </Typography>
         </Box>
         <Box
@@ -37,11 +52,15 @@ function Hero() {
               fontSize: "16px",
               color: "#666666",
               lineHeight: "28px",
+              width: "90%",
+              "@media (max-width: 900px)": {
+                fontSize: "14px", 
+                lineHeight: "24px",
+                width: "100%",
+              },
             }}
           >
-            Must explain to you how all this mistaken idea of pleasure and
-            praising pain was born and will give you a complete account of the
-            system, and expound the actual teachings.
+            <Translation text={"DSystem"}/>
           </Typography>
         </Box>
         <CustomButton>

@@ -55,24 +55,24 @@ import { PiTelevisionSimple } from "react-icons/pi";
       title: "home",
     },
     {
-      link: "#about",
-      title: "about",
-    },
-    {
-      link: "#advantages",
-      title: "advantages",
+      link: "#point",
+      title: "point",
     },
     {
       link: "#modules",
       title: "modules",
     },
     {
-      link: "#explore",
-      title: "explore",
+      link: "#advantages",
+      title: "advantages",
     },
     {
-      link: "#pricing",
-      title: "pricing",
+      link: "#benefits",
+      title: "benefits",
+    },
+    {
+      link: "#cases",
+      title: "cases",
     },
      {
        link: "#contact",
@@ -148,26 +148,22 @@ import { PiTelevisionSimple } from "react-icons/pi";
     {
       title: "m-1-t",
       description: "m-1-d",
-      icon: GrMoney,
-      color: "#e2ec24",
+      img: "/public/img/module-1.png",
     },
     {
       title: "m-2-t",
       description: "m-2-d",
-      icon: FaPeopleArrows,
-      color: "#e8cd49",
+      img: "/public/img/modules-2.png",
     },
     {
       title: "m-3-t",
       description: "m-3-d",
-      icon: MdOutlinePrecisionManufacturing,
-      color: "#5ec021",
+      img: "/public/img/modules-3.png",
     },
     {
       title: "m-4-t",
       description: "m-4-d",
-      icon: MdOutlineInventory2,
-      color: "#0986fa",
+      img: "/public/img/modules-4.png",
     },
     {
       title: "m-5-t",

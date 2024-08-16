@@ -15,7 +15,7 @@ function Technology() {
         <Box>
           <BodyTypography
           >
-            Technologies
+            Modules
           </BodyTypography>
         </Box>
         <Box

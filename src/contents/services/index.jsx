@@ -33,7 +33,9 @@ const cardData = [
 
 function Services() {
   return (
-    <Container auto>
+    <section id={"point"}>
+
+    <Container  auto>
       <Box
         sx={{
           display: "grid",
@@ -45,33 +47,33 @@ function Services() {
           marginTop: "20%",
           gap: 4,
         }}
-      >
+        >
         {cardData.map((card, index) => (
           <Card
-            key={index}
-            sx={{
-              maxWidth: 345,
-              textAlign: "center",
-              borderRadius: "5px",
-              padding: "48px 30px 40px 30px",
-              boxShadow: "0 10px 30px 5px rgba(0, 0, 0, 0.1)",
-              transition: "box-shadow 0.3s ease-in-out",
-              "&:hover": {
-                boxShadow: "0px 0px  20px 0px rgba(0, 0, 2, 0.3)",
-                "& img": {
-                  transform: "scale(1.05)",
-                },
+          key={index}
+          sx={{
+            maxWidth: 345,
+            textAlign: "center",
+            borderRadius: "5px",
+            padding: "48px 30px 40px 30px",
+            boxShadow: "0 10px 30px 5px rgba(0, 0, 0, 0.1)",
+            transition: "box-shadow 0.3s ease-in-out",
+            "&:hover": {
+              boxShadow: "0px 0px  20px 0px rgba(0, 0, 2, 0.3)",
+              "& img": {
+                transform: "scale(1.05)",
               },
-              ...(index === 1 && {
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                padding: "24px 30px 24px 30px",
-                "& .MuiCardMedia-root": {
-                  marginBottom: "16px",
-                },
-              }),
-            }}
+            },
+            ...(index === 1 && {
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              padding: "24px 30px 24px 30px",
+              "& .MuiCardMedia-root": {
+                marginBottom: "16px",
+              },
+            }),
+          }}
           >
             {index === 1 ? (
               <>
@@ -83,10 +85,10 @@ function Services() {
                   sx={{
                     objectFit: "contain",
                     transition: "transform 0.3s ease-in-out",
-                    paddingTop: "4%",
+                    paddingTop: "7%",
                   }}
-                />
-                <CardTypography>{card.title}</CardTypography>
+                  />
+                <CardTypography sx={{paddingTop:"15px"}}>{card.title}</CardTypography>
                 <CardContent>
                   <Typography
                     sx={{
@@ -94,7 +96,7 @@ function Services() {
                       fontSize: "16px",
                       fontWeight: 500,
                     }}
-                  >
+                    >
                     {card.description}
                   </Typography>
                 </CardContent>
@@ -111,7 +113,7 @@ function Services() {
                     objectFit: "contain",
                     transition: "transform 0.3s ease-in-out",
                   }}
-                />
+                  />
                 <CardContent>
                   <Typography
                     sx={{
@@ -119,17 +121,18 @@ function Services() {
                       fontSize: "16px",
                       fontWeight: 500,
                     }}
-                  >
+                    >
                     {card.description}
                   </Typography>
                 </CardContent>
               </>
             )}
-            <ReadMoreButton />
+            {/* <ReadMoreButton /> */}
           </Card>
         ))}
       </Box>
     </Container>
+        </section>
   );
 }
 
