@@ -1,4 +1,9 @@
-{
+{ 
+    "Request":"Запросить Демо",
+    "Send":"Отправить Сообщение",
+    "Show":"Показать Больше",
+    "Read":"Читать далее",
+    "Download":"Скачать",
     "point": "Особенности",
     "benefits":"Выгоды",
     "cases":"Факты",
@@ -105,6 +110,12 @@
     "contact-title": "Подписаться на нашу рассылку",
     "contact-description": "Получайте последние новости, обновления и многие другие новости каждую неделю.",
     "sended-successfully" : "Заявка успешно отправлено",
-    "show": "Показать Больше",
-    "close": "Закрывать"
+    "close": "Закрывать",
+     "Individual Analyst":"Индивидуальный Aналитик",
+     "Teams & Organizations":"Команды и Организации",
+      "Embedded Analytics":"Встроенная Aналитика",
+      "Simple easy distinguish in a free hour when our power choice.":"Просто легко различать в свободный час, когда наш выбор мощности.",
+    "Therefore always hold these matters to principle reject pleasures.":"Поэтому всегда придерживайтесь этих принципов и отвергайте удовольствия.",
+    "Trouble that bound ensue equaly blame belongs to those weakness.":"Беда, которая обязательно последует, в равной степени относится к тем слабостям."
+
   }

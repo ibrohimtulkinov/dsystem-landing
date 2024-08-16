@@ -3,6 +3,7 @@ import { PiHeadphonesFill } from "react-icons/pi";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
 import { RiFolderDownloadLine } from "react-icons/ri";
+import Translation from "../../components/translation";
 
 import React from "react";
 
@@ -128,7 +129,7 @@ function FirstHeader() {
                 },
               }}
             >
-              Download
+              <Translation text={"Download"}/>
             </Typography>
           </Box>
         </Box>
@@ -155,7 +156,7 @@ function FirstHeader() {
               "&:hover": { color: "#7321ea" },
             }}
           >
-            Request for Demo
+           <Translation text={"Request"} />
           </Typography>
         </Box>
       </Box>

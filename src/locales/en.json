@@ -1,4 +1,9 @@
 {
+    "Request":"Request for Demo",
+    "Send":"Send Message",
+    "Show":"Show More",
+    "Read":"Read",
+    "Download":"Download",
     "point": "Point",
     "benefits":"Benefits",
     "cases":"Cases",
@@ -100,11 +105,15 @@
     "global-acc": "Global Acceptance",
     "mobile-app": "Control your bussiness by mobile app",
     "name": "Name",
-    "send": "Send",
     "contact": "Contact",
     "contact-title": "Sign up to our newsletter",
     "contact-description": "Receive latest news, updates and many other news every week.",
     "sended-successfully" : "Application sent successfully",
-    "show": "Show More",
-    "close": "Close"
+    "close": "Close",
+    "Individual Analyst":"Individual Analyst",
+    "Teams & Organizations":"Teams & Organizations",
+    "Embedded Analytics":"Embedded Analytics",
+    "Simple easy distinguish in a free hour when our power choice.":"Simple easy distinguish in a free hour when our power choice.",
+    "Therefore always hold these matters to principle reject pleasures.":"Therefore always hold these matters to principle reject pleasures.",
+    "Trouble that bound ensue equaly blame belongs to those weakness.":"Trouble that bound ensue equaly blame belongs to those weakness."
   }

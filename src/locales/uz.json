@@ -1,4 +1,9 @@
-{
+{ 
+    "Request":"Demo uchun so'rov",
+    "Send":"Xabar Yuborish",
+    "Show":"Ko'proq Ko'rish",
+    "Read":"Ko'proq o'qish",
+    "Download":"Yuklab oling",
     "point": "Xususiyatlari",
     "benefits":"Foydalar",
     "cases":"Faktlar",
@@ -19,6 +24,7 @@
     "f-4-t": "Internet laboratoriya",
     "f-4-d": "Bizning interaktiv onlayn laboratoriyamizga tashrif buyuring.",
     "explore-title": "Kuchni kashf qiling",
+    "get-started": "Boshlash",
     "explore-description": "D-Clinics bilan klinikangiz potensialini oching. Avtomatlashtirilgan rejalashtirish, intuitiv bemorlarni boshqarish, xavfsiz elektron tibbiy hujjatlar va silliq hisob-kitobdan rohatlaning. Samaradorlikni oshiring, bemorlarning qoniqishini yaxshilang va yuqori sifatli tibbiy xizmat ko'rsatishga e'tibor qaratishingizga yordam bering.",
     "modules-title": "Klinikani kompleks boshqarish uchun kompleks modullar",
     "add": "Qo'shish",
@@ -100,11 +106,18 @@
     "contact-title": "Bizning axborot byulletenimizga obuna bo'ling",
     "contact-description": "Har hafta eng so'nggi yangiliklar, yangilanishlar va boshqa ko'plab yangiliklarni oling.",
     "sended-successfully" : "So'rov muvaffaqiyatli yuborildi",
-    "show": "Ko'proq ko'rsatish",
     "close": "Yopish",
     "Selected-Modules": "Tanlangan-Modullar",
     "No-Modules": "Hech qanday modul qo'shilmagan",
     "currency" : "so'm",
-     "total" : "Jami summa",
-     "price" : "Narxi"
+    "total" : "Jami summa",
+    "price" : "Narxi",
+    "Individual Analyst":"Individual Tahlilchi",
+    "Teams & Organizations":"Jamoalar va Tashkilotlar",
+    "Embedded Analytics":"Oʻrnatilgan Tahlillar",
+    "Simple easy distinguish in a free hour when our power choice.":"Bizning quvvat tanlovimiz bo'lganda oddiy, oson ajrata olasiz.",
+    "Therefore always hold these matters to principle reject pleasures.":"  Shuning uchun har doim bu masalalarni zavqlanishdan bosh torting.",
+     "Trouble that bound ensue equaly blame belongs to those weakness.":"O'zaro bog'liq muammolar ham xuddi shu zaifliklarga tegishli."
+
   }
+

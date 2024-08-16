@@ -9,6 +9,7 @@ import {
 import React from "react";
 import ReadMoreButton from "../../components/readMoreButton";
 import CardTypography from "../../components/text/body2";
+import Translation from "../../components/translation";
 
 const cardData = [
   {
@@ -88,7 +89,7 @@ function Services() {
                     paddingTop: "7%",
                   }}
                   />
-                <CardTypography sx={{paddingTop:"15px"}}>{card.title}</CardTypography>
+                <CardTypography sx={{paddingTop:"15px"}}><Translation text={card.title}/></CardTypography>
                 <CardContent>
                   <Typography
                     sx={{
@@ -97,13 +98,13 @@ function Services() {
                       fontWeight: 500,
                     }}
                     >
-                    {card.description}
+                    <Translation text={card.description}/>
                   </Typography>
                 </CardContent>
               </>
             ) : (
               <>
-                <CardTypography>{card.title}</CardTypography>
+                <CardTypography><Translation text={card.title}/></CardTypography>
                 <CardMedia
                   component="img"
                   alt={card.title}
@@ -122,7 +123,7 @@ function Services() {
                       fontWeight: 500,
                     }}
                     >
-                    {card.description}
+                     <Translation text={card.description}/>
                   </Typography>
                 </CardContent>
               </>
