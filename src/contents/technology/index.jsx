@@ -36,12 +36,12 @@ function Technology() {
       <Stack sx={{ position: "relative", textAlign: "center",marginTop:"5%", gap: 4, alignItems: "center" }}>
         <Box
           component="img"
-          src="/img/tab-1.png"
-          sx={{ boxShadow: 5, borderRadius: "20px", width: {xs: "100%", md: "70%"} }}
+          src="/img/Screenshot 2024-08-19 at 11.05.37.png"
+          sx={{ boxShadow: 5, padding:"20px", backgroundColor:"#ffff",  borderRadius: "20px", width: {xs: "100%", md: "70%"} }}
         />
         <Box
           component="img"
-          src="/img/phone-1.png"
+          src="/img/Screenshot 2024-08-19 at 11.24.37.png"
           sx={{
             position: {xs: "static", md: "absolute"},
             top: "20%",
@@ -50,14 +50,18 @@ function Technology() {
             width: {xs: "80%", md: "unset"},
             boxShadow: 3,
             borderRadius: "30px",
+            padding:"20px",
+            backgroundColor:"#ffff"
           }}
         />
 
 
         <Box
           component="img"
-          src="/img/screen-1.png"
+          src="/img/Screenshot 2024-08-19 at 10.38.49.png"
           sx={{
+            width:"60%",
+            height:"50%",
             position: {xs: "static", md: "absolute"},
             top: "54%",
             width: {xs: "80%", md: "unset"},
@@ -65,7 +69,8 @@ function Technology() {
             objectFit: "contain",
             background: "#fff",
             padding: "15px",
-            borderRadius: "50%",
+            borderRadius: "10%",
+            boxShadow:4,
           }}
         />
       </Stack>

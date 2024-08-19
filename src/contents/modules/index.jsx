@@ -156,12 +156,20 @@ function Modules() {
         </Box>
         {count < modulesData.length && (
           <Box sx={{ textAlign: "center", marginTop: "3%" }}>
-            <CustomButton onClick={Show}><Translation text={"Show"} /></CustomButton>
+            <CustomButton onClick={Show} sx={{
+               "@media (max-width: 900px)" : {
+                marginTop: "6%" 
+               }
+            }}><Translation text={"Show"} /></CustomButton>
           </Box>
         )}
         {count > 17 && (
           <Box sx={{ textAlign: "center", marginTop: "3%" }}>
-            <CustomButton onClick={Close}><Translation text={"close"} /></CustomButton>
+            <CustomButton onClick={Close} sx={{
+              "@media (max-width: 900px)" : {
+                marginTop:"6%"
+              }
+            }} ><Translation text={"close"} /></CustomButton>
           </Box>
         )}
         <Dialog

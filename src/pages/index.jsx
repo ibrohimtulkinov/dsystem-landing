@@ -14,7 +14,11 @@ import Shape5 from "../../public/img/shape-31.png";
 
 export default function Home() {
   return (
-    <Box>
+    <Box sx={{
+      "@media (max-width: 900px)": {
+        overflow:"hidden", 
+      },
+    }}>
       <Box
         sx={{
           backgroundImage: `url(${Shape})`,
@@ -79,7 +83,8 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
           minHeight: "140vh", 
           "@media (max-width: 900px)": {
-            minHeight: "auto", 
+            minHeight: "auto",
+            overflow:"hidden", 
           },
         }}
       >

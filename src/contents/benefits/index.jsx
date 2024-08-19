@@ -48,7 +48,7 @@ function Benefits() {
           <Box
             sx={{
               paddingTop: "20%",
-              gap: 7,
+              gap: 10,
               display: "grid",
               gridTemplateColumns: {
                 xs: "1fr",
@@ -71,11 +71,16 @@ function Benefits() {
             >
               <Box
                 component="img"
-                src="/img/tab-2.png"
+                src="/img/Screenshot 2024-08-19 at 11.14.25.png"
                 sx={{
+                  objectFit:"contain",
+                  width:"85%",
+                  height:"90%",
                   boxShadow: 5,
                   borderRadius: "20px",
                   marginBottom: "20px",
+                  padding:"20px",
+                  backgroundColor:"#ffff"
                 }}
               />
 
@@ -114,7 +119,9 @@ function Benefits() {
                 component="img"
                 src="/img/screen-2.png"
                 sx={{
+                  width:"40%",
                   boxShadow: 3,
+                  left:"65%",
                   zIndex: 10,
                   background: "#fff",
                   "@media (min-width: 800px)": {
